@@ -1,0 +1,134 @@
+body {
+    background-color: #FCDE70;
+    min-height: 1500px;
+    user-select: none;
+    
+
+}
+
+.navbar {
+    top: 0%;
+    padding: 10px;
+    font-family: 'Alaska', sans-serif;
+    background-color: #F5F7F8;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline !important;
+
+}
+
+#menu img {
+    margin-left: auto;
+}
+
+.carousel-container {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 565px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.carousel-container.img {
+    max-height: 250px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Menjaga jarak antara carousel dan gambar Meimei */
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.menu .menu-item {
+    flex-grow: 1; /* Supaya carousel mengisi ruang yang tersedia */
+}
+
+.menu img {
+ /* Atur ukuran maksimum gambar */
+    margin-left: auto; /* Memastikan gambar tetap di sisi kanan */
+}
+
+
+/* --- Outlet Section --- */
+.outlet {
+    text-align: center;
+    background: linear-gradient(to bottom, #FF9800, #FFF3CD);
+    padding: 50px 20px;
+    display: flex;
+}
+
+.outlet-container {
+    background: #fff9e6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gambar "Outlet Kami" */
+.outlet-header img {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+/* Konten Outlet */
+.outlet-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .outlet-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Gambar Outlet */
+.outlet-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.outlet-info h2 {
+    color: #039BE5;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.outlet-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-warning {
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.btn-warning:hover {
+    background: #FFC107;
+    box-shadow: none;
+}
